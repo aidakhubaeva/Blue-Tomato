@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Sky Blue",
+    "image": "./images/coloring_cover.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Sunset Orange",
+    "image": "./images/coloring_cover.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Mint Green",
+    "image": "./images/coloring_cover.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Lavender Mist",
+    "image": "./images/coloring_cover.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Peach Blush",
+    "image": "./images/coloring_cover.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Ocean Breeze",
+    "image": "./images/coloring_cover.jpg"
+  }
+]

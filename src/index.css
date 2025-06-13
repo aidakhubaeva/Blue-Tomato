@@ -1,0 +1,26 @@
+:root {
+  /* Цвета */
+  --color-primary: #2c3dd3;
+  --color-secondary: #e6e6fa;
+  --color-dark: #131316;
+  --color-light: #dadada;
+  --color-accent: #ffa500;
+
+  /* Шрифты */
+  --font-main: 'Libre Baskerville', serif;
+  --font-display: 'Abril Fatface', serif;
+  --font-handwritten: 'Pacifico', cursive;
+
+  /* Размеры */
+  --max-width: 1240px;
+  --header-height: 50px;
+  --radius: 10px;
+
+  /* Прозрачности / фоны */
+  --blur-bg: rgba(214, 214, 214, 0.205);
+}
+
+
+body {
+  margin: 0;
+}
