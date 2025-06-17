@@ -3,7 +3,9 @@ import { useSelector } from 'react-redux';
 import type { RootState } from '../../services/store';
 
 const AppBackground = () => {
-  const isHovered = useSelector((state: RootState) => state.hover.isHovered);
+  const hoverActive = useSelector((state: RootState) => state.hover.isHovered);
+  const modalOpen = useSelector((state: RootState) => state.modal.isOpen);
+  const isHovered = hoverActive || modalOpen;
 
   return (
     <div className={`${styles.wrapper}`}>

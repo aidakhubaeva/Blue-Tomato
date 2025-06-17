@@ -5,10 +5,9 @@
     justify-content: space-between;
     max-width: 900px;
     height: 50px;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 20px 40px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-radius: 20px;
     backdrop-filter: blur(10px);
     box-shadow: 0 2px 24px rgba(0, 0, 0, 0.116);
     background-color: rgba(226, 226, 226, 0.164);
@@ -29,6 +28,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    cursor: pointer;
     z-index: 1;
 }
 
