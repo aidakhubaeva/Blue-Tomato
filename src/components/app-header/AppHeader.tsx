@@ -6,7 +6,9 @@ const AppHeader = () => {
 
   return (
     <header className={styles['app-header']}>
-      <div className={styles.leftText}>Login / Sign In</div>
+      <div className={styles.leftText} onClick={() => navigate('/login')}>
+        Login / Sign In
+      </div>
       <div className={styles.logo} onClick={() => navigate('/')}>
         <h1 className={styles['logo__title']}>blue tomato</h1>
       </div>

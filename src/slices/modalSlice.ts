@@ -1,22 +1,33 @@
 import { createSlice } from '@reduxjs/toolkit';
 import type { PayloadAction } from '@reduxjs/toolkit';
 
-const initialState = {
+type ModalType = 'product' | 'pay' | null;
+
+interface ModalState {
+    isOpen: boolean;
+    type: ModalType;
+    data: any;
+}
+
+const initialState: ModalState = {
     isOpen: false,
-    selectedId: null as number | null,
+    type: null,
+    data: null,
 };
 
 const modalSlice = createSlice({
     name: 'modal',
     initialState,
     reducers: {
-        openModal: (state, action: PayloadAction<number>) => {
+        openModal: (state, action: PayloadAction<{ type: ModalType; data: any }>) => {
             state.isOpen = true;
-            state.selectedId = action.payload;
+            state.type = action.payload.type;
+            state.data = action.payload.data;
         },
         closeModal: (state) => {
             state.isOpen = false;
-            state.selectedId = null;
+            state.type = null;
+            state.data = null;
         },
     },
 });
