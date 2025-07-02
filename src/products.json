@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Sky Blue",
     "image": "./images/coloring_cover.jpg",
-    "description": "Научный постер с птичкой колибри, обучающий анатомии и особенностям.",
+    "description": "A scientific poster featuring a hummingbird, teaching its anatomy and characteristics.",
     "price": 3.50,
     "available": true
   },
@@ -11,7 +11,7 @@
     "id": 2,
     "name": "Golden Sun",
     "image": "./images/coloring_cover-2.jpg",
-    "description": "Авторская инфографика о солнечных вспышках, выполненная в жёлто-оранжевой гамме.",
+    "description": "An original infographic about solar flares, designed in a yellow-orange color scheme.",
     "price": 4.20,
     "available": true
   },
@@ -19,7 +19,7 @@
     "id": 3,
     "name": "Deep Night",
     "image": "./images/coloring_cover-3.jpg",
-    "description": "Минималистичный постер о фазах Луны. Идеально подходит для ночной тематики.",
+    "description": "A minimalist poster about the phases of the Moon. Perfect for night-themed decor.",
     "price": 3.90,
     "available": true
   },
@@ -27,7 +27,7 @@
     "id": 4,
     "name": "Ocean Drift",
     "image": "./images/coloring_cover-4.jpg",
-    "description": "Иллюстрация с течениями океана и видами подводного мира. Образовательный постер.",
+    "description": "An illustration featuring ocean currents and underwater life. An educational poster.",
     "price": 4.00,
     "available": true
   }

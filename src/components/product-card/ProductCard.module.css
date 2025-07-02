@@ -1,3 +1,13 @@
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    margin: 100px auto;
+    max-width: 1100px;
+    z-index: 2;
+}
+
 .card {
     width: 350px;
     height: 500px;
@@ -5,7 +15,7 @@
     backdrop-filter: blur(10px);
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    box-shadow: var(--shadow-dark);
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -17,19 +27,15 @@
 }
 
 .cardNumber {
-    font-size: 400px;
-    font-weight: 900;
-    color: rgba(0, 0, 0, 0.308);
+    font-size: 350px;
+    font-family: var(--font-heading);
+    color: rgba(var(--color-dark-rgb), 0.3);
     line-height: 1;
 }
 
 .title {
     font-size: 50px;
-    font-weight: bold;
-    font-family: var(--font-display);
-    color: rgba(0, 0, 0, 0.308);
-    margin-top: 10px;
-    margin-left: 4px;
+    color: rgba(var(--color-dark-rgb), 0.3);
     z-index: 1;
 }
 
@@ -42,22 +48,18 @@
     object-fit: cover;
     opacity: 0;
     transition: opacity 0.6s ease, transform 0.6s ease;
-
     border-radius: 10px;
     z-index: 0;
 }
 
 .card:hover .cardImage {
     opacity: 1;
-    box-shadow: 0 8px 24px rgb(0, 0, 0);
+    box-shadow: var(--shadow-dark);
 }
 
-.main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 60px;
-    margin: 100px auto;
-    max-width: 1100px;
-    z-index: 2;
+
+.card:hover .cardNumber,
+.card:hover .title {
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }

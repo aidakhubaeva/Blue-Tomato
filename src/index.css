@@ -7,9 +7,8 @@
   --color-accent: #ffa500;
 
   /* Шрифты */
-  --font-main: 'Libre Baskerville', serif;
-  --font-display: 'Abril Fatface', serif;
-  --font-handwritten: 'Pacifico', cursive;
+  --font-text: 'Ubuntu', sans-serif;
+  --font-heading: 'Abril Fatface', serif;
 
   /* Размеры */
   --max-width: 1240px;
@@ -18,16 +17,65 @@
 
   /* Прозрачности / фоны */
   --blur-bg: rgba(214, 214, 214, 0.205);
+  --color-dark-rgb: 19, 19, 22;
+
+  /* Кнопки */
+  --button-padding: 12px 24px;
+  --button-radius: 20px;
+  --button-font-weight: 600;
+  --button-transition: background-color 0.2s ease;
+  --shadow-dark: 0 2px 24px rgba(0, 0, 0, 0.2);
+
+  --font-size-heading: 30px;
+  --font-size-input-button: 16px;
+  --font-size-text: 20px;
 }
 
 
 body {
   margin: 0;
   overflow-y: scroll;
+  font-family: var(--font-text);
+
 }
 
 
-h1 h2 h3 p span {
+h1,
+h2,
+h3 {
   margin: 0;
   padding: 0;
+  font-family: var(--font-heading);
+  font-size: var(--font-size-heading);
+  font-weight: 400;
+}
+
+p,
+span,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-text);
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  padding: var(--button-padding);
+  border-radius: var(--button-radius);
+  font-size: var(--font-size-input-button);
+}
+
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  background: #f5f5f5;
+  border: none;
+  padding: var(--button-padding);
+  border-radius: var(--button-radius);
+  box-shadow: inset 5px 2px 7px rgba(0, 0, 0, 0.2);
+  font-size: var(--font-size-input-button);
+  outline: none;
 }

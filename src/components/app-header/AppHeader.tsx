@@ -1,19 +1,22 @@
 import styles from './AppHeader.module.css';
-import { useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
+import logo from '../../../public/images/blue-tomato_logo-black.png';
 
 const AppHeader = () => {
   const navigate = useNavigate();
 
   return (
     <header className={styles['app-header']}>
-      <div className={styles.leftText} onClick={() => navigate('/login')}>
-        Login / Sign In
+      <div className={styles.leftGroup}>
+        <NavLink to="/login" className={styles.link}>Login</NavLink>
+        <span className={styles.separator}>/</span>
+        <NavLink to="/register" className={styles.link}>Register</NavLink>
       </div>
       <div className={styles.logo} onClick={() => navigate('/')}>
-        <h1 className={styles['logo__title']}>blue tomato</h1>
+        <img src={logo} alt="Blue Tomato Logo" className={styles['logo__img']} />
       </div>
       <div className={styles.rightText} onClick={() => navigate('/cart')}>
-        Cart
+        <p>Cart</p>
       </div>
     </header>
   );

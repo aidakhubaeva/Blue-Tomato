@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 import { Trash2 } from 'lucide-react';
 
 import styles from './Cart.module.css';
@@ -8,6 +9,7 @@ import { openModal } from '../../slices/modalSlice';
 import type { RootState } from '../../services/store';
 
 const Cart: React.FC = () => {
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   const cartItems = useSelector((state: RootState) => state.cart.items);
 
@@ -44,7 +46,7 @@ const Cart: React.FC = () => {
                 <button
                   className={styles.delete}
                   onClick={() => handleRemove(item.id)}
-                  title="Удалить"
+                  title="Delete"
                 >
                   <Trash2 size={18} />
                 </button>
@@ -53,15 +55,13 @@ const Cart: React.FC = () => {
           </ul>
 
           <div className={styles.summary}>
-            <div className={styles.total}>
-              Total: {total.toFixed(2)} ₽
-            </div>
-            <button className={styles.pay} onClick={handlePay}>
-              Оплатить
-            </button>
+            <div className={styles.total}>Total: {total.toFixed(2)} $</div>
+            <button className={styles.pay} onClick={handlePay}>Pay</button>
           </div>
         </>
       )}
+
+      <button className={styles.home} onClick={() => navigate('/')}>Home</button>
     </div>
   );
 };

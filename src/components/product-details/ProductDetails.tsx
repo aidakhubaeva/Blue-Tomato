@@ -41,9 +41,11 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({
             onClick={handleAddToCart}
             disabled={isInCart}
           >
-            {isInCart ? 'In Cart' : 'To Cart'}
+            <p>{isInCart ? 'In Cart' : 'To Cart'}</p>
           </button>
-          <button className={styles.pay}>Pay</button>
+          <button className={styles.pay}>
+            <p>Pay</p>
+          </button>
         </div>
       </div>
     </div>

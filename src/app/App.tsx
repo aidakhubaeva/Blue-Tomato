@@ -9,9 +9,11 @@ import ProductCard from '../components/product-card/ProductCard';
 import Modal from '../components/modal/Modal';
 import ProductDetails from '../components/product-details/ProductDetails';
 import Cart from '../components/cart';
+import Register from '../pages/register';
 import Login from '../pages/login';
 import Account from '../pages/account';
 import Pay from '../pages/pay';
+import RegisterVerify from '../components/register-verify';
 
 import { openModal, closeModal } from '../slices/modalSlice';
 
@@ -44,6 +46,7 @@ function App() {
         <Routes>
           <Route path="/" element={<ProductCard onClick={handleCardClick} />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
           <Route path="/account" element={<Account />} />
         </Routes>
@@ -62,6 +65,12 @@ function App() {
         {isOpen && type === 'pay' && (
           <Modal onClose={handleModalClose}>
             <Pay items={modalData.items} total={modalData.total} />
+          </Modal>
+        )}
+
+        {isOpen && type === 'registerVerify' && (
+          <Modal onClose={handleModalClose}>
+            <RegisterVerify email={modalData.email} />
           </Modal>
         )}
       </div>

@@ -1,24 +1,22 @@
 .wrapper {
-    width: 100%;
     max-width: 900px;
-    min-height: 500px;
+    min-height: 80vh;
     background-color: rgba(255, 255, 255, 0.473);
     backdrop-filter: blur(10px);
-    padding: 20px;
+    padding-top: 50px;
     border-radius: 10px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    box-shadow: var(--shadow-dark);
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-    margin: 100px auto;
+    margin: 0px auto;
 }
 
 .title {
     text-align: center;
-    font-size: 24px;
+    font-size: var(--font-size-heading);
     margin-bottom: 20px;
-    font-weight: bold;
 }
 
 .form {
@@ -27,22 +25,8 @@
     gap: 16px;
 }
 
-.input {
-    padding: 12px;
-    font-size: 16px;
-    border: none;
-    border-radius: 20px;
-    background: #e4e4e4;
-}
-
 .button {
-    padding: 15px;
-    font-size: 16px;
-    font-weight: bold;
     background-color: #78b3da;
-    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.26);
+    box-shadow: var(--shadow-dark);
     color: white;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
 }

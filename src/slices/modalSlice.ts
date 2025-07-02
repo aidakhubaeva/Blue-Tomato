@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 import type { PayloadAction } from '@reduxjs/toolkit';
 
-type ModalType = 'product' | 'pay' | null;
+type ModalType = 'product' | 'pay' | 'registerVerify' | null;
 
 interface ModalState {
     isOpen: boolean;
