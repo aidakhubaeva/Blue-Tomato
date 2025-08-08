@@ -3,7 +3,7 @@
 ![Sketch](./public/images/sketch.jpg)  
 ![Background](./public/images/background.jpg)
 
-## About the Project
+# About the Project
 
 **Blue Tomato** is a prototype of a digital coloring book store, built with React and TypeScript, using Redux Toolkit for state management.
 
@@ -15,14 +15,14 @@ Now, the coloring book can be purchased in both digital and printed formats.
 
 The project creates a storefront of coloring books, where each card displays contour art. When hovering over a card, the entire background switches to black-and-white mode to draw attention to the cover. This is not just a decorative effect — it’s part of the overall concept.
 
-# Completed:
+## Completed:
 — Developed a scalable product catalog using React and Redux Toolkit, reducing navigation time by up to 40% through optimized filtering and pagination logic.
 — Implemented a responsive layout system using SCSS, Flexbox, and Grid with 6 breakpoints to ensure full cross-device compatibility.
 — Designed the brand identity and integrated it into the interface with pixel-perfect precision, reducing UI rework by 50%.
 — Set up a modular UI structure using reusable components and custom hooks, decreasing logic duplication and doubling development speed in future iterations.
 — Configured the development environment with Vite, hot reloading, and predefined build scripts, reducing onboarding time for new contributors by approximately 3 hours.
 
- # In Development:
+## In Development:
 — Multi-step checkout form with React Hook Form and Yup validation, aiming to reduce input errors and failed submissions by ~50%.
 — Lazy loading for product images and optimized SVG previews, targeting a 30–35% improvement in page load speed.
 — Artist’s Dashboard: secure login for artists, purchase statistics, ability to upload new artworks, with moderation before adding to the catalog.
